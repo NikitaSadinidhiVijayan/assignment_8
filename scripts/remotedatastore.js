@@ -11,6 +11,7 @@
     }
     RemoteDataStore.prototype.add = function(key, val) {
         // Code will go here
+        val['id'] = val['emailAddress'];
         return $.post(this.serverUrl, val, function(serverResponse) {
             console.log(serverResponse);
         });

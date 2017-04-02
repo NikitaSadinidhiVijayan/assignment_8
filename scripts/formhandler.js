@@ -31,6 +31,19 @@
 
         });
     };
+    FormHandler.prototype.addEmailHandler = function(fn) {
+        console.log('Setting email handler for form');
+        this.$formElement.on('blur', '[name="emailAddress"]', function(event) {
+            // Event handler code will go here
+            var text = event.target.value;
+            console.log(text);
+            var message = '';
+            if (fn(text)) {
+                message = text + ' already exist';
+                event.target.setCustomValidity(message);
+            }
+        });
+    };
     FormHandler.prototype.addInputHandler = function(fn) {
         console.log('Setting input handler for form');
         this.$formElement.on('input', '[name="emailAddress"]', function(event) {
