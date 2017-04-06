@@ -59,6 +59,32 @@
             }
         });
     };
+    // var emailAddress = event.target.value;
+    // //console.log(fn(emailAddress));
+    // var message = '';
+    // if (fn(emailAddress)) {
+    //     $.get('http://localhost:3003/coffeeorders', function(serverResponse) {
+    //         var emails = [];
+    //         for (var i in serverResponse) {
+    //
+    //             emails.push(serverResponse[i].emailAddress);
+    //         }
+    //         if serverEmails.indexOf(emailAddress)!= -1{
+    //           message = 'Email already exist ';
+    //           event.target.setCustomValidity(message);
+    //         }else{
+    //           event.target.setCustomeValidy('');
+    //         }
+    //
+    //     });
+    //     //event.target.setCustomValidity('');
+    // } else {
+    //     //message = emailAddress + ' is not an authorized email address!';
+    //     //event.target.setCustomValidity(message);
+    //     event.target.setCustomValidity('');
+    // }
+
+
 
 
     App.FormHandler = FormHandler;

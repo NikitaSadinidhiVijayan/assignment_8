@@ -16,14 +16,14 @@
             }
         },
         emailExist: function(email) {
-            var output = $.ajax({
-                url: 'http://localhost:3002/coffeeorders' + '/' + email,
-                success: function(output) {
-                    //console.log(output);
-                }
 
+            var output = $.ajax({
+                url: 'http://localhost:3003/coffeeorders' + '/' + email,
+                success: function(output) {
+
+                    console.log(output + 'dd');                    
+                }
             });
-            console.log(output);
             if (output.responseText == '{}') {
                 return false;
             } else {

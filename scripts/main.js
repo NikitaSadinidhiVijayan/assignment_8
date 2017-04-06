@@ -3,7 +3,7 @@
     var FORM_SELECTOR = '[data-coffee-order="form"]';
     var CHECKLIST_SELECTOR = '[data-coffee-order="checklist"]';
     //silver challenge ch-13
-    var SERVER_URL = 'http://localhost:3002/coffeeorders';
+    var SERVER_URL = 'http://localhost:3003/coffeeorders';
     //var SERVER_URL = 'http://coffeerun-v2-rest-api.herokuapp.com/api/coffeeorders/';
     var App = window.App;
     var Truck = App.Truck;
@@ -25,7 +25,7 @@
                 checkList.addRow.call(checkList, data);
             });
     });
-    formHandler.addEmailHandler(Validation.emailExist);
+//formHandler.addEmailHandler(Validation.emailExist);
     formHandler.addInputHandler(Validation.isCompanyEmail);
     myTruck.printOrders(checkList.addRow.bind(checkList));
     //silver chanllenge chapter 12

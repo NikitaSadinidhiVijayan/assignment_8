@@ -32,7 +32,7 @@
         });
     };
     RemoteDataStore.prototype.remove = function(key) {
-        $.ajax(this.serverUrl + '/' + key, {
+        return $.ajax(this.serverUrl + '/' + key, {
             type: 'DELETE'
         });
     };
